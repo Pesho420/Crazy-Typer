@@ -1,0 +1,251 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+
+
+
+/*My code*/
+#mainContainer {
+  text-align: center;
+  display: block;
+  margin: auto;
+}
+
+#canvas {
+  margin: auto;
+  margin-top: 2%;
+  display: block;
+  width: 80%;
+}
+
+#userInput {
+  display: inline-block;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 50%;
+  float: left;
+}
+
+#playBody {
+  background-color: #ccc;
+}
+
+
+#indexBody {
+	background: url(files/background.jpg) 100% 100%;
+}
+
+#gameDescription {
+  margin: auto;
+  display: block;
+  color: #ccc;
+  width: 40%;
+  margin-top: 5%;
+  font: 20px times;
+  background-color: rgba(70, 70, 70, 0.7);
+  text-align: justify;
+  padding: 10px;
+  border-radius: 5px;
+  vertical-align: middle;
+}
+
+#playButton {
+	margin: auto;
+	display: block;
+	color: white;
+	background-color: rgba(70, 70, 70, 0.7); /*#4286f4;*/
+	border: 2px solid white;
+	border-radius: 5px;
+	width: 30%;
+	height: 125px;
+	margin-top: 5%;
+	text-align: center;
+	font: 50px arial;
+  text-shadow: #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px,
+               #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px;
+}
+
+#playButton:hover {
+	cursor: pointer;
+  margin: auto;
+	display: block;
+	color: rgba(255, 255, 255, 0.7);
+	background-color: rgba(70, 70, 70, 0.5); /*#4286f4;*/
+	border: 2px solid rgba(255, 255, 255, 0.5);
+	border-radius: 5px;
+	width: 30%;
+	height: 125px;
+	margin-top: 5%;
+	text-align: center;
+	font: 50px arial;
+  text-shadow: rgba(0,0,0,0.7) 0px 0px 1px, rgba(0,0,0,0.7) 0px 0px 1px, rgba(0,0,0,0.7) 0px 0px 1px,
+               rgba(0,0,0,0.7) 0px 0px 1px, rgba(0,0,0,0.7) 0px 0px 1px, rgba(0,0,0,0.7) 0px 0px 1px;
+}
+
+#indexHeader {
+  background-color: rgba(70, 70, 70, 0.7);
+  text-align: center;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  color: black;
+  font: 60px arial;
+  text-shadow: #fff 0px 0px 5px,   #fff 0px 0px 5px,   #fff 0px 0px 5px,
+               #fff 0px 0px 5px,   #fff 0px 0px 5px,   #fff 0px 0px 5px;
+  cursor: pointer;
+}
+
+
+#playHeader {
+  background-color: rgba(70, 70, 70, 0.7);
+  text-align: center;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  color: black;
+  font: 60px arial;
+  text-shadow: #fff 0px 0px 5px,   #fff 0px 0px 5px,   #fff 0px 0px 5px,
+               #fff 0px 0px 5px,   #fff 0px 0px 5px,   #fff 0px 0px 5px;
+  cursor: pointer;
+}
+
+#timer {
+  display: inline-block;
+  margin: auto;
+  text-align: center;
+  vertical-align: middle;
+  color: #ccc;
+  font: 20px arial;
+  padding: 7px;
+  float: left;
+  margin-left: 0.5%;
+}
+
+#score {
+  display: inline-block;
+  margin: auto;
+  text-align: center;
+  vertical-align: middle;
+  color: #ccc;
+  font: 20px arial;
+  padding: 7px;
+  float: right;
+}
+
+#resetButton {
+  display: inline-block;
+  margin: auto;
+  text-align: center;
+  vertical-align: middle;
+  font: 20px arial;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  float: left;
+  margin-left: 0.5%;
+}
+
+#userControls {
+  text-align: center;
+  display: inline-block;
+  margin-top: 12px;
+  width: 80%;
+}

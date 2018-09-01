@@ -1,0 +1,38 @@
+<!doctype html>
+
+<html>
+  <head>
+    <title>TypeRacer</title> 
+   
+   	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+
+    <meta name="author" content="Petar Nyagolov">
+    <meta name="keywords" content="typing,test,crazy,typer,game"> 
+
+    <script src="scripts/loadWords.js"></script>
+    <script src="scripts/randomNumberGenerator.js"></script>
+    <script src="scripts/word_t.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css"></link>
+  </head>
+
+  <body id="playBody">
+    <header id="playHeader" onclick="window.location.href='/'">
+      <strong>Crazy Typer</strong>
+    </header>
+
+    <div id="mainContainer"> 
+      <canvas id="canvas" width="1200" height="600"></canvas>
+      
+      <div id="userControls">
+        <input type="text" id="userInput" placeholder="Type words here">
+        <div id="timer">120</div>
+        <button id="resetButton">Reset</button>
+        <div id="score">Score: 0</div>
+      <div>
+
+      <script src="scripts/engine.js"></script>      
+    </div>
+  </body>
+</html>
