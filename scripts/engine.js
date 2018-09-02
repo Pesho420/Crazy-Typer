@@ -166,6 +166,7 @@ function updateTimer() {
 }
 
 function setUpNewGame() {
+  userInput.value = "";
   userInput.focus();
   clearInterval(timerInterval);
 
